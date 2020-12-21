@@ -1,0 +1,17 @@
+{
+    "name": "GameDealFinder",
+    "version": "1.0",
+    "description": "This extension finds deals from external sites whenever a steam link is clicked.",
+    "manifest_version": 2,
+    "icons": {
+        "16": "steam-logo.png"
+    },
+    "background": {
+        "scripts": ["./background.js"]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["tabs", "https://store.steampowered.com/app/*"]
+}
