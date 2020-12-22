@@ -1,0 +1,1 @@
+document.getElementById("gog-url").innerHTML = "test";
