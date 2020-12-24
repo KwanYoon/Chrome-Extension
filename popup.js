@@ -12,11 +12,16 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
             }
         }
 
-        gogUrl = "https://www.gog.com/game/" + url.substring(slashLoc + 1, url.length - 1);
-        document.getElementById("gog-url").onclick = gogHyperlink(gogUrl);
+        var gameName = url.substring(slashLoc + 1, url.length - 1)
+
+        gogUrl = "https://www.gog.com/game/" + gameName;
+        document.getElementById("gog-url").onclick = hyperlink(gogUrl);
+
+        cdkeysUrl = "https://www.cdkeys.com/catalogsearch/result/?q=" + gameName
+        document.getElementById("cdkeys-url").onclick = hyperlink(cdkeysUrl);
     }
 });
 
-function gogHyperlink(link) {
+function hyperlink(link) {
     window.open(link)
 }
