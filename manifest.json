@@ -6,12 +6,10 @@
     "icons": {
         "16": "steam-logo.png"
     },
-    "background": {
-        "scripts": ["./background.js"]
-    },
-    "options_page": "./options.html",
+
     "browser_action": {
         "default_popup": "popup.html"
     },
-    "permissions": ["tabs", "https://store.steampowered.com/app/*"]
+    
+    "permissions": ["https://store.steampowered.com/app/*"]
 }

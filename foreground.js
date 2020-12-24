@@ -1,1 +1,0 @@
-document.querySelector(".logo").classList.add('spinspinspin')
